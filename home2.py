@@ -176,7 +176,6 @@ def start_home():
             html = m.get_root().render()
             st.components.v1.html(html, width=width, height=height)
 
-
         st.title("Pasoh Forest Reserve Location")
 
         # Coordinates for Pasoh Forest Reserve

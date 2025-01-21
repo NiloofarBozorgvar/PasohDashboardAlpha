@@ -169,27 +169,27 @@ def start_home():
         # ---------------------------------------------------------------------------------------------------map
     st.markdown("<div style='height: 50px;'></div>", unsafe_allow_html=True)
 
-    import streamlit as st
-    import folium
-    def folium_static_map(m):
-        width, height = 700, 400
-        html = m.get_root().render()
-    st.components.v1.html(html, width=width, height=height)
+        import streamlit as st
+        import folium
+        def folium_static_map(m):
+            width, height = 700, 400
+            html = m.get_root().render()
+            st.components.v1.html(html, width=width, height=height)
 
 
-    st.title("Pasoh Forest Reserve Location")
+        st.title("Pasoh Forest Reserve Location")
 
         # Coordinates for Pasoh Forest Reserve
-    pasoh_coords = (2.982000000000, 102.313000000000)
+        pasoh_coords = (2.982000000000, 102.313000000000)
 
         # Create a Folium map centered around Pasoh Forest Reserve
-    map_pasoh = folium.Map(location=pasoh_coords, zoom_start=10)
+        map_pasoh = folium.Map(location=pasoh_coords, zoom_start=10)
 
         # Add a marker for Pasoh Forest Reserve
-    folium.Marker(location=pasoh_coords, popup="Pasoh Forest Reserve").add_to(map_pasoh)
+        folium.Marker(location=pasoh_coords, popup="Pasoh Forest Reserve").add_to(map_pasoh)
 
         # Display the map using st.write()
-    folium_static_map(map_pasoh)
+        folium_static_map(map_pasoh)
     #if option_tomenu == 'Summary':
 
     df = pd.read_csv("Datasets/NewDataset.csv")

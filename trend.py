@@ -5,7 +5,7 @@ def start_trend():
     from streamlit_option_menu import option_menu
 
     df = pd.read_csv("Datasets/NewDataset.csv")
-    option_tomenutype = option_menu(None, ["Growth", "DBH size class", "AGB", 'Carbon stock', 'Mortality', 'Lifespan'],
+    option_tomenutype = option_menu(None, ["Growth", "DBH size class", "AGB", 'Carbon stock', 'Mortality', 'Type', 'Lifespan', 'Degree', 'Location'],
                                 menu_icon="cast", default_index=0, orientation="horizontal")
     import plotly.express as px
     import streamlit as st
@@ -1529,7 +1529,7 @@ def start_trend():
 
             # Create pie chart
             fig = px.pie(age_class_AGB_rate, values='AGB', names='Age Class',
-                         title=f'Average AGB rate Across Age Classes for Year {selected_year}',
+                         title=f'Average AGB Across Age Classes for Year {selected_year}',
                          hole=0.3)
 
             # Change chart size
@@ -1849,7 +1849,7 @@ def start_trend():
 
                 # Create pie chart
                 fig = px.pie(size_class_AGB_rate, values='AGB', names='Size Class',
-                             title=f'Average AGB Rate Across Size Classes for Hectare {hectare}',
+                             title=f'Average AGB Across Size Classes for Hectare {hectare}',
                              hole=0.3)
 
                 # Change chart size
@@ -2572,7 +2572,7 @@ def start_trend():
 
             # Create pie chart
             fig = px.pie(age_class_Carbon_rate, values='Carbon', names='Age Class',
-                         title=f'Average Carbon Rate Across Age Classes for Year {selected_year}',
+                         title=f'Average Carbon Across Age Classes for Year {selected_year}',
                          hole=0.3)
 
             # Change chart size
@@ -2894,7 +2894,7 @@ def start_trend():
 
                 # Create pie chart
                 fig = px.pie(size_class_Carbon_rate, values='Carbon', names='Size Class',
-                             title=f'Average Carbon Rate Across Size Classes for Hectare {hectare}',
+                             title=f'Average Carbon Across Size Classes for Hectare {hectare}',
                              hole=0.3)
 
                 # Change chart size
@@ -3453,7 +3453,7 @@ def start_trend():
 
             # Create pie chart
             fig = px.pie(size_class_mortality, values='Count', names='Size Class',
-                         title=f'Mortality Distribution Rate Across Size Classes for Year {selected_year}',
+                         title=f'Mortality Distribution Across Size Classes for Year {selected_year}',
                          hole=0.3)
 
             # Change chart size
@@ -3749,7 +3749,7 @@ def start_trend():
 
                 # Create pie chart
                 fig = px.pie(age_class_mortality_rate, values='Mortality Rate', names='Age Class',
-                             title=f'Mortality Across Age Classes for Hectare {hectare}',
+                             title=f'Mortality Rate Across Age Classes for Hectare {hectare}',
                              hole=0.3)
 
                 # Change chart size
@@ -3836,7 +3836,7 @@ def start_trend():
 
                 # Create pie chart
                 fig = px.pie(size_class_mortality_rate, values='Mortality Rate', names='Size Class',
-                             title=f'Mortality Across Size Classes for Hectare {hectare}',
+                             title=f'Mortality Rate Across Size Classes for Hectare {hectare}',
                              hole=0.3)
 
                 # Change chart size
@@ -4764,7 +4764,7 @@ def start_trend():
 
             # Create pie chart
             fig = px.pie(age_class_Lifespan_rate, values='Lifespan', names='Age Class',
-                         title=f'Average Lifespan Rate Across Age Classes for Year {selected_year}',
+                         title=f'Average Lifespan Across Age Classes for Year {selected_year}',
                          hole=0.3)
 
             # Change chart size
@@ -5086,7 +5086,7 @@ def start_trend():
 
                 # Create pie chart
                 fig = px.pie(size_class_Lifespan_rate, values='Lifespan', names='Size Class',
-                             title=f'Average Lifespan Rate Across Size Classes for Hectare {hectare}',
+                             title=f'Average Lifespan Across Size Classes for Hectare {hectare}',
                              hole=0.3)
 
                 # Change chart size

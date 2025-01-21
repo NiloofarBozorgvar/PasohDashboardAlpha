@@ -6,9 +6,7 @@ import simulation as s
 st.set_page_config(page_title="Pasoh Forest Dashboard", layout="wide")
 
 
-
-
-option_tomenu = option_menu(None, ["Home", "Trends", 'Simulation_updated_V3'],
+option_tomenu = option_menu(None, ["Home", "Trends", 'Simulation'],
     icons=['house', 'cloud-upload', "list-task", 'gear'],
     menu_icon="cast", default_index=0, orientation="horizontal")
 
@@ -19,5 +17,5 @@ if option_tomenu == 'Home':
 if option_tomenu == "Trends":
     t.start_trend()
 
-if option_tomenu == "Simulation_updated_V3":
+if option_tomenu == "Simulation":
     s.simulation_start()

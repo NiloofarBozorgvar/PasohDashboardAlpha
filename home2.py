@@ -157,7 +157,6 @@ def start_home():
         st.write("Number of Trees:  435,839")
 
     # Right column content
-    with right_column:
         st.header("Details")
         st.write("Size: 50.00ha")
         st.write("Dimensions: 1000 x 500")

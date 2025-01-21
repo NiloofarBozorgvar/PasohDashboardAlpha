@@ -167,7 +167,7 @@ def start_home():
 
 
         # ---------------------------------------------------------------------------------------------------map
-    st.markdown("<div style='height: 50px;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 50px;'></div>", unsafe_allow_html=True)
 
         import streamlit as st
         import folium

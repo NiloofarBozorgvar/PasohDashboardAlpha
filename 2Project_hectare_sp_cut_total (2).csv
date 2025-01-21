@@ -1,0 +1,13 @@
+,Hectare,Regime,Dipterocarp,Non-Dipterocarp,Chengal,Total Trees,type
+0,1,Heavy,3,17,0,20,sp
+1,1,Medium,3,13,0,16,sp
+2,1,Light,0,12,0,12,sp
+3,2,Heavy,6,9,0,20,sp
+4,2,Medium,5,7,0,16,sp
+5,2,Light,3,6,0,12,sp
+0,1,Heavy,2,17,0,20,vol
+1,1,Medium,2,13,0,16,vol
+2,1,Light,0,11,0,12,vol
+3,2,Heavy,5,14,0,20,vol
+4,2,Medium,5,10,0,16,vol
+5,2,Light,4,7,0,12,vol

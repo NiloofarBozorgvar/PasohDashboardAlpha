@@ -15,7 +15,7 @@ def simulation_start():
 
             # Read the CSV file
             df = pd.read_csv('DBHPrediction2055.csv')
-            
+
             # Remove 385 rows randomly
             num_rows_to_remove = 385
             rows_to_remove = df.sample(num_rows_to_remove).index
